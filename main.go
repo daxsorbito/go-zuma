@@ -27,7 +27,6 @@ func getRemainingCandies(inputBoard, inputBalls string) string {
 		if foundIndex > -1 {
 			lastIndex := getLastSubsequestBallIndex(board, foundIndex)
 			if (lastIndex - foundIndex) >= 2 { // 3 pairs
-				// fmt.Println(">>>", board, currentBall, foundIndex, lastIndex, len(board))
 				board = append(board[:foundIndex], board[lastIndex:len(board)]...)
 				continue
 			}
