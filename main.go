@@ -6,12 +6,12 @@ import (
 )
 
 func main() {
-	fmt.Println("WWRRRBB, RBW >>", getRemainingCandies("WWRRRBB", "RBW"))
-	fmt.Println("QWERRDDSA, RDSSEAQA >>", getRemainingCandies("QWERRDDSA", "RDSSEAQA"))
-	fmt.Println("ASDFFDSAFFFFRT, AADSDFSF >>", getRemainingCandies("ASDFFDSAFFFFRT", "AADSDFSF"))
+	fmt.Println("WWRRRBB, RBW >>", getRemainingBalls("WWRRRBB", "RBW"))
+	fmt.Println("QWERRDDSA, RDSSEAQA >>", getRemainingBalls("QWERRDDSA", "RDSSEAQA"))
+	fmt.Println("ASDFFDSAFFFFRT, AADSDFSF >>", getRemainingBalls("ASDFFDSAFFFFRT", "AADSDFSF"))
 }
 
-func getRemainingCandies(inputBoard, inputBalls string) string {
+func getRemainingBalls(inputBoard, inputBalls string) string {
 	/*
 		1. Get the firstBall
 		2. Get the first index of the firstBall in the board (NEXT: count the subsequesnt same firstBall in the board and insert the firstBall in that group instead)
